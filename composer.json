@@ -1,0 +1,21 @@
+{
+    "name": "talhahavadar/iletimerkezi-sms",
+    "description": "İletimerkezi.com sms hizmetini kullanmak için hazırlanmış bir kütüphane.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Talha Havadar",
+            "email": "havadartalha@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IletimerkeziSms\\": "src"
+        }
+    }
+}

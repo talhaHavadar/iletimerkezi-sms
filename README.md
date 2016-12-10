@@ -26,3 +26,12 @@ Then you need to enter your credentials to `config/iletimerkezi.php`
  file.
 
  You can find example usage of library in `tests/test.php` file.
+
+
+ ## Important
+
+ If it is not working correctly please run the comment below.
+
+    php artisan config:cache
+
+Sometimes `config()` function returns null. To prevent this case, we need to run the command above.

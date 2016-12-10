@@ -28,9 +28,9 @@ Then you need to enter your credentials to `config/iletimerkezi.php`
  You can find example usage of library in `tests/test.php` file.
 
 
- ## Important
+## Important
 
- If it is not working correctly please run the comment below.
+If it is not working correctly please run the command below.
 
     php artisan config:cache
 

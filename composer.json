@@ -1,6 +1,7 @@
 {
     "name": "talhahavadar/iletimerkezi-sms",
     "description": "İletimerkezi.com sms hizmetini kullanmak için hazırlanmış bir kütüphane.",
+    "keywords": ["laravel", "iletimerkezi", "sms"],
     "type": "library",
     "license": "MIT",
     "authors": [

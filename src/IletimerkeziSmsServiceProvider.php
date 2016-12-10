@@ -16,7 +16,7 @@ class IletimerkeziSmsServiceProvider extends ServiceProvider
         //
         $this->publishes([
             __DIR__.'/config/iletimerkezi.php' => config_path('iletimerkezi.php'),
-        ]);
+        ], 'config');
     }
 
     /**

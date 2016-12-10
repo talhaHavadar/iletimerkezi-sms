@@ -6,8 +6,19 @@
 
 ### For Laravel
 
-First you need to install via composer after that you need to
-run the command below:
+First you need to install via composer after that you need to add `IletimerkeziSmsServiceProvider` to
+`app/Providers/AppServiceProvider.php` file of your project.
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->register('IletimerkeziSms\IletimerkeziSmsServiceProvider');
+    }
+then you can run the command below:
 
     php artisan vendor:publish --tag=config
 

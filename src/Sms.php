@@ -39,7 +39,8 @@ class Sms implements SmsInterface
         foreach ($this->messages as $message) {
             $request->message($message);
         }
-        return $request->post();
+        $res = new Response($request->post());
+        return $res->array();
     }
 
 }

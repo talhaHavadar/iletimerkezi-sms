@@ -29,7 +29,8 @@ class Sms implements SmsInterface
 
     public function cancel($orderId){
         $request = new CancelOrderRequest($this->configuration);
-        return $request->order($orderId)->post();
+        $res = new Response($request->order($orderId)->post());
+        return $res->array();
     }
 
 

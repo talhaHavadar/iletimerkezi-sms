@@ -10,7 +10,7 @@ class Sms implements SmsInterface
         $this->configuration = function_exists('config') ? config('iletimerkezi') : require __DIR__."/config/iletimerkezi.php";
     }
 
-    
+
     /**
     *
     * $message parameter should be an array with this signature:
@@ -30,7 +30,7 @@ class Sms implements SmsInterface
     public function cancel($orderId){
         $request = new CancelOrderRequest($this->configuration);
         $res = new Response($request->order($orderId)->post());
-        return $res->array();
+        return $res->asArray();
     }
 
 
@@ -41,7 +41,7 @@ class Sms implements SmsInterface
             $request->message($message);
         }
         $res = new Response($request->post());
-        return $res->array();
+        return $res->asArray();
     }
 
 }
